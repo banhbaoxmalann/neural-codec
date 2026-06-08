@@ -178,7 +178,7 @@ class NeuralCodec:
 def load_pretrained_model():
     m = NeuralCodec(num_embeddings=128, embedding_dim=128, lr=0.001)
     # UPDATED: Assuming the weights folder is in the same directory as app.py
-    WEIGHTS_PATH = "C:/Users/Admin/Desktop/168225_25203_Tran_Tuan_Anh_Nguyen_Ngoc_Ninh/weight" 
+    WEIGHTS_PATH = "/home/anh_202414610/Desktop/nen1/weight" 
     try:
         m.load(WEIGHTS_PATH)
         return m, True
@@ -232,8 +232,8 @@ else:
     st.error(" WARNING: Failed to load weights. Running with random initialization.")
 
 # UPDATED: Paths adjusted to point to local relative dataset folder
-CAT_FOLDER_PATH = 'C:/Users/Admin/Desktop/168225_25203_Tran_Tuan_Anh_Nguyen_Ngoc_Ninh/DvC/Cats'
-DOG_FOLDER_PATH = 'C:/Users/Admin/Desktop/168225_25203_Tran_Tuan_Anh_Nguyen_Ngoc_Ninh/DvC/Dogs'
+CAT_FOLDER_PATH = '/home/anh_202414610/Desktop/nen1/DvC/Cats'
+DOG_FOLDER_PATH = '/home/anh_202414610/Desktop/nen1/DvC/Dogs'
 
 cat_files = []
 if os.path.exists(CAT_FOLDER_PATH):
